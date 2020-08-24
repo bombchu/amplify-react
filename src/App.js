@@ -18,7 +18,7 @@ class App extends Component {
 	saveFile = () => {
 		Storage.put(this.state.filename, this.state.file).then( () => {
 			console.log('saved file.')
-			this.setState( fileUrl: '', file: '', filename: '' })
+			this.setState({ fileUrl: '', file: '', filename: '' })
 	})
 		.catch(err => {
 			console.log('error uploading file.', err)
