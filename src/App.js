@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { withAuthenticator } from 'aws-amplify-react'
-import { Storage } from 'aws-amplify'
+import Auth from '@aws-amplify/auth';
+import Storage from '@aws-amplify/storage';
+
+//import { withAuthenticator } from 'aws-amplify-react'
+//import { Storage } from 'aws-amplify'
 
 class App extends Component {
 	state = { fileUrl: '', file: '', filename: '' }
